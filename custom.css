@@ -1,0 +1,35 @@
+*{
+    --webkit-appearance: none;
+    appearance: none;
+    margin: 0;
+}
+
+.sideBar{
+    position: relative;
+    width: 37vw;
+    height: 100vh;
+    background-color: green;
+    background-image: "./imgs/ridge.jpeg";
+    background-position: center;
+    background-size: auto;
+}
+
+.transparentContainer{
+    position: absolute;
+    top:190px;
+    width: 37vw;
+    height: 10rem;
+    background-color: black;
+    opacity: 20%;
+}
+
+
+
+@media only screen and (max-width: 600px){
+    .sideBar {
+        width: 100vw;
+        height: 15vh;
+        display: flex;
+        background-size: 100vw;
+    }
+}
