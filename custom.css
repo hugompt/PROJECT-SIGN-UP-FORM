@@ -34,12 +34,11 @@
 
 .transparentContainer{
     margin:0;
-    position: absolute;
+    position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
     top:190px;
-    width: 30vw;
     height: 10rem;
     background-color: rgba(22, 21, 21, 0.8); /* rgb, white, with alpha at 0.5 */
     min-width: 320px;
@@ -108,6 +107,10 @@ input:active{
     outline: none !important;
 }
 
+
+
+
+/* LAYOUT FOR MOBILES OR SMALL BROWSERS */
 @media only screen and (max-width: 600px){
     .sideBar {
         width: 100vw;
@@ -124,4 +127,18 @@ input:active{
     
     }
     
+    .mainCont{
+        width: 100%;
+        top:15vh;
+        position: fixed;
+        margin-top: 0;
+        padding-left: 2%;
+        margin-right: 20%;
+        font-size: 90%;
+    }
+
+    .header{
+        font-size: 20px;
+        font-weight:500;
+    }
 }
