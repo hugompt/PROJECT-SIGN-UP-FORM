@@ -3,9 +3,7 @@
     appearance: none;
     margin: 0;
     padding: 0;
-    font-family: "Raleway", Geneva, Tahoma, sans-serif;
-    outline: 1px solid red;
-    
+    font-family: "Raleway", Geneva, Tahoma, sans-serif;    
 }
 
 .main{
@@ -14,6 +12,7 @@
     background-color: #222422;
     height: 100%;
     color: white;
+    overflow: hidden;
 }
 .sideBar{
     position: relative;
@@ -114,6 +113,10 @@ legend{
     min-width: (fit-content - 5%);
 }
 
+.rightSide{
+    margin-left: 50px;
+}
+
 label{
     font-size: 13px;
 }
@@ -121,6 +124,7 @@ input{
     display: flex;
     flex-flow: row wrap;
     border-radius: 5px;
+    padding-left: 20px;
     height: 20px;
     width: 100%;
 }
@@ -133,8 +137,10 @@ input:focus{
     outline: none !important;
 }
 
+
+
 /* LAYOUT FOR MOBILES OR SMALL BROWSERS */
-@media only screen and (max-width: 600px){
+@media only screen and (max-width: 640px){
     .sideBar {
         width: 100vw;
         height: 15vh;

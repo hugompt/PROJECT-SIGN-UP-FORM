@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./custom.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald">
+    <script src="main.js" defer></script>
     <title>Sign-up</title>
 </head>
 <body>
@@ -31,27 +32,27 @@
             <legend>Let's do this!</legend>
             <div class="auxCont">
               <label for="firstName">FIRST NAME</label>
-              <input type="text" name="firstName" id="firstName">
+              <input type="text" name="firstName" id="firstName" pattern="[a-zA-Z]+" required>
             </div>
-            <div class="auxCont">
+            <div class="auxCont rightSide">
               <label for="lastName">LAST NAME</label>
-              <input type="text" name="lastName" id="lastName">
+              <input type="text" name="lastName" id="lastName" pattern="[a-zA-Z]+" required>
             </div>
             <div class="auxCont">
               <label for="mail">E-MAIL</label>
-              <input type="email" name="mail" id="mail">
+              <input type="email" name="mail" id="mail" required>
             </div>
-            <div class="auxCont">
+            <div class="auxCont rightSide">
               <label for="phone">PHONE NUMBER</label>
-              <input type="tel" name="phone" id="phone">
+              <input type="tel" name="phone" id="phone" pattern="^[+]*[(]{0,1}[0-9]{1,4}[)]{0,1}[-\s\./0-9]*$" placeholder= " ">
             </div>
             <div class="auxCont">
               <label for="pwd">PASSWORD</label>
-              <input type="password" name="pwd" id="pwd">
+              <input type="password" name="pwd" id="pwd" placeholder= " " required>
             </div>
-            <div class="auxCont">
+            <div class="auxCont rightSide">
               <label for="pwdConfirm">CONFIRM PASSWORD</label>
-              <input type="password" name="pwdConfirm" id="pwdConfirm">
+              <input type="password" name="pwdConfirm" id="pwdConfirm" placeholder= " " required>
             </div>
           </form>
         </div>
