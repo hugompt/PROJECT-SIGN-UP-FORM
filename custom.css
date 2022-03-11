@@ -84,34 +84,51 @@
 }
 
 .formCont{
-    border: 1px solid black;
-    box-shadow: 2px 2px black;
     margin-top: 20px;
-    padding-left: 5%;
     background-color: grey;
+    display: flex;
+    align-items: center;
+    box-shadow: 2px 2px white;
 }
 
 form{
     color:rgb(241, 237, 237);
+    height: 250px;
+    padding-top: 2.5%;
+    text-shadow: 2px 2px black;
+}
+
+legend{
+    margin-left: 2%;
+    font-weight: 700;
 }
 
 .auxCont{
+    position: relative;
     display: flex;
     flex-flow: column wrap;
     width: 40%;
+    margin-top: 20px;
+    float: left;
+    margin-left: 4%;
+    min-width: (fit-content - 5%);
 }
 
+label{
+    font-size: 13px;
+}
 input{
     display: flex;
     flex-flow: row wrap;
     border-radius: 5px;
-    height: 20px;   
+    height: 20px;
+    width: 100%;
 }
 
 input:hover,
 input:focus{
     border: 0;
-    border: 2px solid blue;
+    border: 2px solid burlywood;
     box-shadow: 2px 2px gray;
     outline: none !important;
 }
