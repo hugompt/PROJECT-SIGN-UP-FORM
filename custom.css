@@ -113,6 +113,10 @@ legend{
     min-width: (fit-content - 5%);
 }
 
+.pwdCheck{
+    font-size: 5px;
+}
+
 .rightSide{
     margin-left: 50px;
 }

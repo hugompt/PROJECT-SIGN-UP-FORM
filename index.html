@@ -23,7 +23,7 @@
         <div class="header">
           This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams.
           <br>
-          Sign up <span style="font-style: italic;">now</span> to get started.
+          Sign up <span style="font-style: italic;">now </span>to get started.
           <br><br>
           You <span style="font-style: italic;">know</span> you want to.
         </div>
@@ -32,27 +32,28 @@
             <legend>Let's do this!</legend>
             <div class="auxCont">
               <label for="firstName">FIRST NAME</label>
-              <input type="text" name="firstName" id="firstName" pattern="[a-zA-Z]+" required>
+              <input type="text" name="firstName" id="firstName" pattern="[a-zA-Z]+" placeholder="John" required>
             </div>
             <div class="auxCont rightSide">
               <label for="lastName">LAST NAME</label>
-              <input type="text" name="lastName" id="lastName" pattern="[a-zA-Z]+" required>
+              <input type="text" name="lastName" id="lastName" pattern="[a-zA-Z]+" placeholder="Doe" required>
             </div>
             <div class="auxCont">
               <label for="mail">E-MAIL</label>
-              <input type="email" name="mail" id="mail" required>
+              <input type="email" name="mail" id="mail" placeholder="john.doe@gmail.com" required>
             </div>
             <div class="auxCont rightSide">
               <label for="phone">PHONE NUMBER</label>
-              <input type="tel" name="phone" id="phone" pattern="^[+]*[(]{0,1}[0-9]{1,4}[)]{0,1}[-\s\./0-9]*$" placeholder= " ">
+              <input type="tel" name="phone" id="phone" placeholder= "+41711111111">
             </div>
             <div class="auxCont">
               <label for="pwd">PASSWORD</label>
-              <input type="password" name="pwd" id="pwd" placeholder= " " required>
+              <input type="password" name="pwd" id="pwd" placeholder= " " required onkeyup='check();'>
+              <span id="pwdCheck"></span>
             </div>
             <div class="auxCont rightSide">
               <label for="pwdConfirm">CONFIRM PASSWORD</label>
-              <input type="password" name="pwdConfirm" id="pwdConfirm" placeholder= " " required>
+              <input type="password" name="pwdConfirm" id="pwdConfirm" placeholder= " " required onkeyup='check();'>
             </div>
           </form>
         </div>

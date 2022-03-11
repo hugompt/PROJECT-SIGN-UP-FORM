@@ -65,3 +65,20 @@
     phoneInput.style.backgroundRepeat = "no-repeat";
     phoneInput.style.backgroundPosition = "5px 5px";
     });
+
+
+    let check = function() {
+        if (document.getElementById('pwd').value ==
+          document.getElementById('pwdConfirm').value && document.getElementById('pwd').value != "") {
+            document.getElementById('pwdCheck').style.color = 'green';
+            document.getElementById('pwdCheck').textContent = 'matching';
+            document.getElementById('pwdCheck').hidden = false;
+        } else if(document.getElementById('pwd').value !=
+        document.getElementById('pwdConfirm').value){
+          document.getElementById('pwdCheck').style.color = 'red';
+          document.getElementById('pwdCheck').textContent = 'not matching';
+          document.getElementById('pwdCheck').hidden = false;
+        }else{
+            document.getElementById('pwdCheck').hidden = true;
+        }
+      }
