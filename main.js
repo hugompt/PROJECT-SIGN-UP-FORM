@@ -6,9 +6,11 @@
     firstNameInput.setCustomValidity('');
     if(firstNameInput.reportValidity()){
         firstNameInput.style.background = "url(./imgs/green_check.svg)"
+        firstNameInput.style.border = "2px solid green";
     }else{
         firstNameInput.setCustomValidity('This field can only contain upper and lowercase letters.\n Try again!');
         firstNameInput.style.background = "url(./imgs/Red_X.svg)";
+        firstNameInput.style.border = "2px solid red";
     };
     firstNameInput.style.backgroundColor = "white";
     firstNameInput.style.backgroundSize = "10px";
@@ -67,18 +69,51 @@
     });
 
 
+    //Passwords validation
+    const pwd1 = document.querySelector('#pwd');
+    const pwd2 = document.querySelector('#pwdConfirm');
+
     let check = function() {
         if (document.getElementById('pwd').value ==
           document.getElementById('pwdConfirm').value && document.getElementById('pwd').value != "") {
-            document.getElementById('pwdCheck').style.color = 'green';
-            document.getElementById('pwdCheck').textContent = 'matching';
+            pwd1.style.background = "url(./imgs/green_check.svg)"
+            pwd1.style.border = "2px solid green";
+            
+            pwd2.style.background = "url(./imgs/green_check.svg)"
+            pwd2.style.border = "2px solid green";
+
+            document.getElementById('pwdCheck').style.color = 'greenyellow';
+            document.getElementById('pwdCheck').textContent = 'Passwords are matching! :)';
             document.getElementById('pwdCheck').hidden = false;
+            document.getElementById('pwdCheck').style.fontSize = "13px";
         } else if(document.getElementById('pwd').value !=
         document.getElementById('pwdConfirm').value){
-          document.getElementById('pwdCheck').style.color = 'red';
-          document.getElementById('pwdCheck').textContent = 'not matching';
-          document.getElementById('pwdCheck').hidden = false;
+            pwd1.style.background = "url(./imgs/Red_X.svg)";
+            pwd1.style.border = "2px solid red";
+
+            pwd2.style.background = "url(./imgs/Red_X.svg)";
+            pwd2.style.border = "2px solid red";
+
+            document.getElementById('pwdCheck').style.color = 'red';
+            document.getElementById('pwdCheck').textContent = 'The passwords are not matching :(';
+            document.getElementById('pwdCheck').hidden = false;
+            document.getElementById('pwdCheck').style.fontSize = "13px";
+            document.getElementById('pwdCheck').style.textShadow = "1px 1px 1px solid grey";
         }else{
             document.getElementById('pwdCheck').hidden = true;
+            pwd1.style.background = "";
+            pwd2.style.background = "";
+
+            pwd1.style.border = "2px solid black";
+            pwd2.style.border = "2px solid black";
+
         }
+        pwd1.style.backgroundColor = "white";
+        pwd1.style.backgroundSize = "10px";
+        pwd1.style.backgroundRepeat = "no-repeat";
+        pwd1.style.backgroundPosition = "5px 5px";
+        pwd2.style.backgroundColor = "white";
+        pwd2.style.backgroundSize = "10px";
+        pwd2.style.backgroundRepeat = "no-repeat";
+        pwd2.style.backgroundPosition = "5px 5px";
       }
