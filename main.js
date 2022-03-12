@@ -1,7 +1,15 @@
+//Global variables
+const firstNameInput = document.querySelector('#firstName');
+const lastNameInput = document.querySelector('#lastName');
+const mailInput = document.querySelector('#mail');
+const phoneInput = document.querySelector('#phone');
+const pwd1 = document.querySelector('#pwd');
+const pwd2 = document.querySelector('#pwdConfirm');
+const btnSubmit = document.querySelector('#btnCreate');
+
 // Validate on user input if content is valid or not
 // and change the visual indicator accordingly
     //First Name validation
-    const firstNameInput = document.querySelector('#firstName');
     firstNameInput.addEventListener('input', () => {
     firstNameInput.setCustomValidity('');
     if(firstNameInput.reportValidity()){
@@ -19,8 +27,6 @@
     });
 
     //Last Name validation
-    const lastNameInput = document.querySelector('#lastName');
-
     lastNameInput.addEventListener('input', () => {
     lastNameInput.setCustomValidity('');
     if(lastNameInput.reportValidity()){
@@ -36,8 +42,6 @@
     });
 
     //E-mail validation
-    const mailInput = document.querySelector('#mail');
-
     mailInput.addEventListener('input', () => {
     mailInput.setCustomValidity('');
     if(mailInput.reportValidity()){
@@ -52,8 +56,6 @@
     });
 
     //Phone validation
-    const phoneInput = document.querySelector('#phone');
-
     phoneInput.addEventListener('input', () => {
     phoneInput.setCustomValidity('');
     if(phoneInput.reportValidity()){
@@ -70,9 +72,6 @@
 
 
     //Passwords validation
-    const pwd1 = document.querySelector('#pwd');
-    const pwd2 = document.querySelector('#pwdConfirm');
-
     let check = function() {
         if (document.getElementById('pwd').value ==
           document.getElementById('pwdConfirm').value && document.getElementById('pwd').value != "") {
@@ -116,4 +115,4 @@
         pwd2.style.backgroundSize = "10px";
         pwd2.style.backgroundRepeat = "no-repeat";
         pwd2.style.backgroundPosition = "5px 5px";
-      }
+    }

@@ -143,10 +143,99 @@ input:focus{
     cursor: pointer;
 }
 
+.submitCont{
+    display: flex;
+    width: 20vw;
+    flex-direction: column;
+    gap: 30px;
+    margin-left: 4%;
+    margin-top: 8%;
+}
+
+button{
+  appearance: button;
+  background-color: #6aff00;
+  border: solid transparent;
+  border-radius: 16px;
+  border-width: 0 0 4px;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  cursor: pointer;
+  display: inline-block;
+  font-family: din-round,sans-serif;
+  font-size: 15px;
+  font-weight: 700;
+  letter-spacing: .8px;
+  line-height: 20px;
+  margin: 0;
+  outline: none;
+  overflow: visible;
+  padding: 13px 16px;
+  text-align: center;
+  text-transform: uppercase;
+  touch-action: manipulation;
+  transform: translateZ(0);
+  transition: filter .2s;
+  user-select: none;
+  -webkit-user-select: none;
+  vertical-align: middle;
+  white-space: nowrap;
+  width: fit-content;
+}
+
+button:after {
+  background-clip: padding-box;
+  background-color: #42ac18;
+  border: solid transparent;
+  border-radius: 16px;
+  border-width: 0 0 4px;
+  bottom: -4px;
+  content: "";
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: -1;
+}
+
+button:main,
+button:focus {
+  user-select: auto;
+}
+
+button:hover:not(:disabled) {
+  filter: brightness(1.5);
+  transform: scale(1.1);
+  color: #222422;
+
+}
+
+button-:disabled {
+  cursor:not-allowed;
+}
+
+a {
+    color: greenyellow;
+    text-decoration: inherit;
+    cursor: pointer;
+  }
+
 
 
 /* LAYOUT FOR MOBILES OR SMALL BROWSERS */
 @media only screen and (max-width: 640px){
+   
+    .content{
+        position: absolute;
+        top: 15vh;
+    }
+
+    .main{
+        position: absolute;
+        overflow: hidden;
+
+    }
+
     .sideBar {
         width: 100vw;
         height: 15vh;
@@ -160,16 +249,6 @@ input:focus{
         height: 10vh;
         background-color: rgba(22, 21, 21, 0.8); /* rgb, white, with alpha at 0.5 */
     
-    }
-    
-    .mainCont{
-        width: 100%;
-        top:15vh;
-        position: fixed;
-        margin-top: 0;
-        padding-left: 2%;
-        margin-right: 20%;
-        font-size: 90%;
     }
 
     .header{
