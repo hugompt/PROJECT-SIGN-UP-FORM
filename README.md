@@ -1,6 +1,8 @@
 # PROJECT-SIGN-UP-FORM
 
-LIVE - link [here](https://hugompt.github.io/PROJECT-SIGN-UP-FORM/)!
+[LIVE DEMO](https://hugompt.github.io/PROJECT-SIGN-UP-FORM/)!
+
+<img width="1036" alt="image" src="https://user-images.githubusercontent.com/99179407/158052513-8d9fb556-3246-4641-a988-cd8db7b92503.png">
 
 📝 Sign-up form built from scrath using HTML, CSS and JavaScript.
 Features of the form:
