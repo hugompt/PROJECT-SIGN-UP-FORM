@@ -1,5 +1,7 @@
 # PROJECT-SIGN-UP-FORM
 
+LIVE - link [here](https://hugompt.github.io/PROJECT-SIGN-UP-FORM/)!
+
 📝 Sign-up form built from scrath using HTML, CSS and JavaScript.
 Features of the form:
   - Dinamic/active individual field validation per type and content;
